@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&display=swap');
+:host {
+    --base: 24px;
+    --sub: calc(var(--base) / 4);
+    --min-width-element: calc(var(--base) * 5);
+    --max-width-element: calc(var(--base) * 20);
+    --height-container: calc(var(--base) * 20);
+    --width-container: 80%;
+    --border-cel-width: 0 1px 1px 0;
+    --border-semi-opacity-color: rgba(255, 255, 255, 0.2);
+    --content-color: #FFFFFF;
+    --font-style: "DM Sans", sans-serif;
+    --font-size: 20px;
+    --size-rectangle: 30px;
+    div.title {
+        max-width: var(--max-width-element);
+        min-width: var(--min-width-element);
+        aspect-ratio: 1 / 1;
+        border-width: var(--border-cel-width);
+        border-style: solid;
+        border-color: var(--border-semi-opacity-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 20px 40px;
+        >div.rectangle {
+            height: var(--size-rectangle);
+            min-width: var(--size-rectangle);
+            border: 2px solid var(--content-color);
+            margin: 0 0 20px 0;
+        }
+        >h2.text {
+            color: var(--content-color);
+            font-family: var(--font-style);
+            font-size: var(--font-size);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/*
+	Flareum Landing New v0.78
+	(c) Flareum, 2023
+*/
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:200,400,500&display=swap');
+@import './global-scss.scss',
+	'./css-vars.scss';
+b,em,i,small,strong,sub,sup,ins,del,mark,code,kbd,samp,var,pre,abbr,bdo,q,cite,blockquote,dfn,br,hr,p,h1,h2,h3,h4,h5,h6,p,a,li,ul,div,wbr{
+	-webkit-font-smoothing: antialiased;
+	color: var(--color-W0);
+}
+.typography-h1{@include typography-h1();}
+.typography-h2{@include typography-h2();}
+.typography-h3{@include typography-h3();}
+.typography-h4{@include typography-h4();}
+.typography-h5{@include typography-h5();}
+.typography-h6{@include typography-h6();}
+.typography-h7{@include typography-h7();}
+.typography-h8{@include typography-h8();}
+.typography-t1{@include typography-t1();}
+.typography-t2{@include typography-t2();}

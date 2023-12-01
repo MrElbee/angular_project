@@ -1,0 +1,13 @@
+@import 'src/styles.scss';
+:host {
+    --maximum: 100%;
+    min-width: var(--maximum);
+    div.heding-section {
+        min-height: var(--baseline);
+        width: var(--maximum);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin: var(--baseline) 0;
+    }
+}

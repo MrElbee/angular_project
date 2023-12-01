@@ -1,0 +1,24 @@
+@import 'src/styles.scss';
+
+:host {
+    div.description {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        >span {
+            margin: $subline;
+            &.first {
+                color: $color-W6-a;
+            }
+        }
+    }
+
+    @media screen and (max-width: $br2-end) {
+        div.description {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+    }
+      
+}

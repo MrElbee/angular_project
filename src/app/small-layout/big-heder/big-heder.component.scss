@@ -1,0 +1,27 @@
+@import 'src/styles.scss';
+:host {
+    --font-weight: 500;
+    --max-width: 80vw;
+    --big-max-width: 100vw;
+    --maximum: 100%;
+    width: fit-content;
+    div.big-heder {
+        max-width: var(--max-width);//$column8;
+        width: var(--maximum);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @media screen and (max-width: $br1-end) {
+        div.big-heder {
+            width: 100%;
+            max-width: var(--big-max-width);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-right: auto;
+        }
+    }
+}

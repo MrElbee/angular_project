@@ -1,0 +1,13 @@
+@import 
+'./styles/_font-mixins.scss',
+'./styles/global-scss.scss',
+'./styles/global-css.scss',
+'./styles/_scss-vars.scss',
+'./styles/css-vars.scss';
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}

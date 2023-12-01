@@ -1,0 +1,87 @@
+@import 'src/styles.scss';
+:host {
+    --base: 24px;
+    --sub: calc(var(--base) / 4);
+    --large-min-width: calc(var(--base) * 3);
+    --button-min-width: var(--large-min-width);
+    --large: calc((var(--base) + (var(--sub) * 3)));
+    --margin-bottom: 12px;
+    --border-width: 1px;
+    --background-color: var(--color-W0-zero-a);
+    --item-color: #FFFFFF;
+  
+    --black-default: #000000;
+    --black-hover: #303030;
+    --black-active: #000000;
+    --black-disable: #DDDDDD;
+
+    --background-disable: var(--black-disable);
+    --item-disable: var(--black-default);
+  
+    --background-active: var(--black-active);
+  
+    --background-hover: var(--black-hover);
+  
+    button {
+      --s1: calc(var(--size) / 2);
+      --s2: calc(var(--size) / 4);
+      --s3: calc(var(--s2) * 1.5);
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      height: var(--size);
+      min-width: var(--button-min-width);
+      padding: 0 var(--s1);
+      border: var(--border-width) solid $color-W7-a;
+      color: var(--item-color);
+      border-radius: var(--s1);
+      text-align: center;
+      cursor: pointer;
+      background-color: var(--background-color);
+      margin-bottom: var(--margin-bottom);
+      transition: all .3s ease;
+  
+      &[disabled] {
+        background-color: var(--background-disable);
+        color: var(--item-disable);
+        opacity: 0.2;
+        pointer-events: none;
+      }
+  
+      &:active {
+        background: var(--background-active);
+        transform: translateY(4px);
+      }
+  
+      &:hover {
+        background: var(--background-hover);
+      }
+  
+      &.large {
+        --size: var(--large);
+        --button-min-width: var(--large-min-width);
+      }
+  
+      &.black {
+        --background-disable: var(--black-disable);
+        --item-disable: var(--black-default);
+        --background-active: var(--black-active);
+        --background-hover: var(--black-hover);
+      }
+  
+    }
+
+    @media screen and (max-width: $br2-end) {
+      button {
+          display: none;
+      }
+  }
+  }
+  
+  
+  
+  
+  

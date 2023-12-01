@@ -1,0 +1,195 @@
+:host {
+  --base: 24px;
+  --sub: calc(var(--base) / 4);
+  --large-min-width: calc(var(--base) * 3);
+  --medium-min-width: calc((var(--base) * 2) + (var(--sub) * 2));
+  --small-min-width: calc((var(--base) * 2) + var(--sub));
+  --tiny-min-width:calc(var(--base) + (var(--sub) * 4));
+  --button-min-width: var(--large-min-width);
+
+  --large: calc((var(--base) + (var(--sub) * 3)));
+  --medium: calc((var(--base) + (var(--sub) * 2)));
+  --small: calc(var(--base) + var(--sub));
+  --tiny: var(--base);
+
+  --background-color: #000000;
+  --item-color: #FFFFFF;
+
+  --black-default: #000000;
+  --black-hover: #303030;
+  --black-active: #000000;
+  --black-disable: #DDDDDD;
+
+  --gray-default: #EEEEEE;
+  --gray-hover: #DDDDDD;
+  --gray-active: #CCCCCC;
+  --gray-disable: #EEEEEE;
+
+  --blue-default: #0088FF;
+  --blue-hover: #2EAFFF;
+  --blue-active: #0088FF;
+  --blue-disable: #5CCEFF;
+
+  --white-default: #FFFFFF;
+  --white-hover: #EEEEEE;
+  --white-active: #DDDDDD;
+  --white-disable: ##FFFFFF;
+
+  --red-default: #FF525D;
+  --red-hover: #FF8093;
+  --red-active: #FF525D;
+  --red-disable: #FFADC0;
+
+  --blue-disable-item: #005ED1;
+  --red-disable-item: #FF2424;
+
+  --background-disable: var(--black-disable);
+  --item-disable: var(--black-default);
+
+  --background-active: var(--black-active);
+
+  --background-hover: var(--black-hover);
+
+  button {
+    --s1: calc(var(--size) / 2);
+    --s2: calc(var(--size) / 4);
+    --s3: calc(var(--s2) * 1.5);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: var(--size);
+    min-width: var(--button-min-width);
+    padding: 0 var(--s1);
+    border: none;
+    color: var(--item-color);
+    border-radius: var(--s1);
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--background-color);
+    margin-bottom: 12px;
+    transition: all .3s ease;
+
+    &[disabled] {
+      background-color: var(--background-disable);
+      color: var(--item-disable);
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    &:active {
+      background: var(--background-active);
+      transform: translateY(4px);
+    }
+
+    &:hover {
+      background: var(--background-hover);
+    }
+
+    &.large {
+      --size: var(--large);
+      --button-min-width: var(--large-min-width);
+    }
+
+    &.medium {
+      --size: var(--medium);
+      --button-min-width: var(--medium-min-width);
+    }
+
+    &.small {
+      --size: var(--small);
+      --button-min-width: var(--small-min-width);
+    }
+
+    &.tiny {
+      --size: var(--tiny);
+      --button-min-width: var(--tiny-min-width);
+    }
+
+    &.with_icon {
+      &.left {
+        flex-direction: row-reverse;
+        padding-left: var(--s3);
+        .icon {
+          margin: 0 var(--s2) 0 0;
+        }
+      }
+      &.right {
+        padding-right: var(--s3);
+        .icon {
+          margin: 0 0 0 var(--s2);
+        }
+      }
+      &.icon_only {
+        .text {
+          display: none;
+        }
+        width: var(--large-min-width);
+        --size: var(--large-min-width);
+        border-radius: 50%;
+        //aspect-ratio: 1/1;
+      }
+    }
+
+    &:not(.with_icon) {
+      .icon {
+        display: none;
+      }
+    }
+
+    &.long {
+      display: block;
+      white-space: nowrap; 
+      max-width: 250px; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &.black {
+      --background-disable: var(--black-disable);
+      --item-disable: var(--black-default);
+      --background-active: var(--black-active);
+      --background-hover: var(--black-hover);
+    }
+
+    &.gray {
+      --background-color: var(--gray-default);
+      --item-color: var(--black-default);
+      --background-disable: var(--gray-disable);
+      --item-disable: var(--black-default);
+      --background-active: var(--gray-active);
+      --background-hover: var(--gray-hover);
+    }
+
+    &.blue {
+      --background-color: var(--blue-default);
+      --background-disable: var(--blue-disable);
+      --item-disable: var(--blue-disable-item);
+      --background-active: var(--blue-active);
+      --background-hover: var(--blue-hover);
+    }
+
+    &.white {
+      --background-color: var(--white-default);
+      --item-color: var(--black-default);
+      --background-disable: var(--white-disable);
+      --item-disable: var(--black-default);
+      --background-active: var(--white-active);
+      --background-hover: var(--white-hover);
+    }
+
+    &.red {
+      --background-color: var(--red-default);
+      --background-disable: var(--red-disable);
+      --item-disable: var(--red-disable-item);
+      --background-active: var(--red-active);
+      --background-hover: var(--red-hover);
+    }
+  }
+}
+
+
+
+

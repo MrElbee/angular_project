@@ -1,0 +1,33 @@
+@import 'src/styles.scss';
+
+:host {
+    --font-weight-big: 500;
+    --font-weight-small: 400;
+    --smaller-width: 25%;
+    --biger-width: 75%;
+    div.small-heder {
+        max-width: $column8;//TODO
+        width: 100%;//TODO
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        div.big-chank {
+            width: var(--biger-width);
+        }
+        div.small-chank {
+            width: var(--smaller-width);
+            padding: calc($subline * 3) 0;
+        }
+    }
+
+    @media screen and (max-width: $br1-end) {
+        div.small-heder {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div.big-chank {
+                width: 100%;
+            }
+        }
+    }
+}

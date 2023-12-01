@@ -1,0 +1,77 @@
+@import 'src/styles.scss';
+
+
+:host {
+    --max-width: 1800px;
+    --min-width: 200px;
+    --min-height: 800px;
+    --max-height: 1000px;
+    --maximum: 100%;
+    $image-1:"Bg.svg";
+    $image-2:"Bg-1.svg";
+    $webkit: -webkit-fill-available;
+    div.background {
+        height: 100vh;
+        background-image: url($image-1);
+        background-repeat: no-repeat;
+        background-position: left var(--maximum) top 0;
+        max-width: 100vw;
+        background-color: $color-D0;
+        // padding: $baseline;
+        div.wrapper {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: var(--maximum);
+            max-width: var(--max-width);//$content-width;
+            width: var(--maximum);
+            // height: 100%;
+            margin: auto;
+            // padding: $baseline;
+            div.second-page {
+                padding: $column1;
+                height: 100%;
+                // width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                >div.content-flexbox {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    min-width: var(--maximum);
+                    // height: var(--maximum);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $br2-start) {
+        div.background {
+            div.wrapper {
+                justify-content: flex-end;
+                align-items: flex-start;
+                >div.second-page {
+                    padding: $gutter;
+                    max-width: 100vw;
+                    min-width: var(--min-width);
+                    width: $webkit;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    >div.content-flexbox {
+                        &.down { 
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: stretch;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+    

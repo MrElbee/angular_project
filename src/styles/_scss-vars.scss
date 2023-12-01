@@ -1,0 +1,112 @@
+/*
+	Flareum Landing New v0.78
+	(c) Flareum, 2023
+*/
+/* break points */
+/* To save your code dependences we used real break point keys. If you want to use the same names like in the design please rename it manualy in whole app ;) */
+$br0-start: 0px;
+$br0-end: 500px;
+$br1-start: 501px;
+$br1-end: 1024px;
+$br2-start: 1025px;
+$br2-end: 1600px;
+$br3-start: 1601px;
+$br3-end: 1920px;
+$br4-start: 1921px;
+$br4-end: 9999px;
+$retina: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
+/* colors */
+$color-W0: rgba(255,255,255,1);
+$color-W0-zero-a: rgba(255,255,255,0);
+$color-W0-zero-a: rgba(255,255,255,0);
+$color-W1-a: rgba(255,255,255,0.95);
+$color-W2-a: rgba(255,255,255,0.88);
+$color-W3-a: rgba(255,255,255,0.8);
+$color-W4-a: rgba(255,255,255,0.67);
+$color-W5-a: rgba(255,255,255,0.4);
+$color-W6-a: rgba(255,255,255,0.18);
+$color-W7-a: rgba(255,255,255,0.1);
+$color-W8-a: rgba(255,255,255,0.05);
+$color-W9-a: rgba(255,255,255,0.02);
+$color-D0: rgba(13,13,16,1);
+$color-D0-zero-a: rgba(13,13,16,0);
+$color-D0-1: rgba(12,12,15,1);
+$color-D0-2: rgba(10,10,12,1);
+$color-D1: rgba(25,25,28,1);
+$color-D2: rgba(40,40,42,1);
+$color-D3: rgba(61,61,64,1);
+$color-D4: rgba(100,100,102,1);
+$color-D5: rgba(163,163,164,1);
+$color-D6: rgba(207,207,207,1);
+$color-D7: rgba(231,231,231,1);
+$color-D8: rgba(243,243,243,1);
+$color-D9: rgba(250,250,250,1);
+$color-D1-tint-a: rgba(13,13,16, 0.95);
+$color-D2-tint-a: rgba(13,13,16, 0.89);
+$color-D3-tint-a: rgba(13,13,16, 0.8);
+$color-D4-tint-a: rgba(13,13,16, 0.64);
+$color-D5-tint-a: rgba(13,13,16, 0.38);
+$color-D6-tint-a: rgba(13,13,16, 0.2);
+$color-D7-tint-a: rgba(13,13,16, 0.1);
+$color-D8-tint-a: rgba(13,13,16, 0.05);
+$color-D9-tint-a: rgba(13,13,16, 0.02);
+$color-D0-zero-a: rgba(13,13,16,0);
+$color-B0: rgba(0,85,255,1);
+$color-B0-1: rgba(0,81,242,1);
+$color-B0-2: rgba(0,77,230,1);
+$color-B0-3: rgba(0,68,204,1);
+$color-B0-4: rgba(0,51,153,1);
+$color-B1: rgba(13,94,255,1);
+$color-B2: rgba(28,104,255,1);
+$color-B3: rgba(51,119,255,1);
+$color-B4: rgba(92,146,255,1);
+$color-B5: rgba(158,190,255,1);
+$color-B6: rgba(204,221,255,1);
+$color-B7: rgba(230,238,255,1);
+$color-B8: rgba(242,247,255,1);
+$color-B9: rgba(250,252,255,1);
+$color-B1-tint-a: rgba(0,85,255, 0.95);
+$color-B2-tint-a: rgba(0,85,255, 0.89);
+$color-B3-tint-a: rgba(0,85,255, 0.8);
+$color-B4-tint-a: rgba(0,85,255, 0.64);
+$color-B5-tint-a: rgba(0,85,255, 0.38);
+$color-B6-tint-a: rgba(0,85,255, 0.2);
+$color-B7-tint-a: rgba(0,85,255, 0.1);
+$color-B8-tint-a: rgba(0,85,255, 0.05);
+$color-B9-tint-a: rgba(0,85,255, 0.02);
+/* semantic color css variable(-s) to use in states :hover | :active | .<custome-state-name> etc */
+$text-color-slot-1: rgba(255,255,255,1);
+$text-color-slot-1-selection: rgba(255,255,255,1);
+$text-color-slot-1-selection-bg: rgba(255,255,255,1);
+/* grid */
+$baseline: 30px;
+$subline: 5px;
+$gutter: 40px;
+$column1: 80px;
+$column2: 200px;
+$column3: 320px;
+$column4: 440px;
+$column5: 560px;
+$column6: 680px;
+$column7: 800px;
+$column8: 920px;
+$column9: 1040px;
+$column10: 1160px;
+$column11: 1280px;
+$column12: 1400px;
+$content-width: $column12;
+/* fonts */
+$font-s-1: 16px;
+$font-s-2: 14px;
+$font-s-3: 12px;
+$font-s0: 18px;
+$font-s1: 22px;
+$font-s2: 25px;
+$font-s3: 30px;
+$font-s4: 38px;
+$font-s5: 47px;
+$font-s6: 60px;
+$font-s7: 76px;
+$font-s8: 103px;
+$font-s9: 146px;
+$font-f1: 'DM Sans';
