@@ -49,7 +49,7 @@
 
     @media screen and (max-width: $br1-end) {
         div.background {
-            background-image: url($image-1);
+            background-image:url($image-1);
             div.wrapper {
                 justify-content: flex-end;
                 align-items: flex-start;
@@ -71,9 +71,9 @@
             }
         }
     }
-    @media screen and (max-width: $br2-start) {
+    @media screen and (min-width: $br2-start) {
         div.background {
-            background-image: url($image-2);
+            background-image:url($image-2);
         }
     }
 }
