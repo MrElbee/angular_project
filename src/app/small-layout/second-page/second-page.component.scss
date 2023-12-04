@@ -49,7 +49,7 @@
         }
     }
 
-    @media screen and (max-width: $br1-start) {
+    @media screen and (max-width: $br1-end) {
         div.background {
             background-image: url($image-1);
             div.wrapper {
